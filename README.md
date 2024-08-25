@@ -1,0 +1,1 @@
+# rathi-tyres-store-page
