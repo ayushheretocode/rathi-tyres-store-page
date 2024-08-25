@@ -1,0 +1,471 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "DM Serif Text", serif;
+}
+
+img{
+    transition: scale 0.3s;
+}
+img:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+
+
+header{
+    display: flex;
+    padding:0 32px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(0, 140, 187);
+    height: 12vh;
+    border-bottom: 4px solid white;
+}
+
+#logo-img{
+    width: 300px;
+    height: 54px;
+    border-radius: 10px;
+    
+}
+
+#nav-list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul li{
+    padding: 32px; 
+}
+
+.navlink{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.navlink:hover{
+    color: black;
+}
+
+#hero{
+    height: 88vh;
+    background: url(images/main.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.hero-text{
+    color: white;
+    font-size: 4em;
+    text-align: center;
+    padding: 0 30px;
+    text-shadow: 0px 0px 20px black;
+}
+
+#we-deal-in{
+    background-color: rgb(238, 238, 238);
+}
+
+.section-heading{
+    width: 400px;
+    font-size: 42px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 40px;
+}
+
+.deal-items-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 30%;
+    padding: 30px;
+}
+
+.card-img{
+    width: 400px;
+    height: 240px;
+    border-radius: 10px;
+}
+
+.card-title{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    color: rgb(0, 89, 118);
+}
+
+.brands-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.brand{
+    width: 20%;
+}
+.brand img{
+    width: 250px;
+    height: 250px;
+    padding-bottom: 32px;
+}
+
+#services{
+    background-color: rgb(238, 238, 238);
+}
+
+.services-container{
+    display: flex;
+    justify-content: center;
+}
+
+.service{
+    padding: 10px 30px 5px 30px;
+}
+.service img{ 
+    border-radius: 16px ;
+}
+
+.service-title{
+    text-align: center;
+    font-weight: 400;
+    color: rgb(0, 89, 118);
+    padding-bottom: 30px;
+}
+
+#about-us{
+    padding: 60px 40px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#store-photo{
+    width: 500px;
+    border-radius: 16px ;
+}
+
+.about-us-item2{
+    padding: 0px 30px;
+}
+
+#about-para{
+    text-align: center;
+    color: rgb(0, 89, 118);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-shadow: 0px 0px 10px rgb(0, 89, 118) ;
+}
+
+#in-about-para{
+    font-size: 24px;
+    font-style: italic;
+}
+
+#contact-us{
+    background-color: rgb(238, 238, 238);
+}
+
+.contact-us-flex{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 60px;
+}
+
+
+
+#map-img{
+    border-radius: 16px;
+    transition: scale 0.5s;
+}
+
+.info{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-pack{
+    padding: 30px 54px;
+}
+
+.info-pack p{
+    color: rgb(0, 89, 118);
+    font-weight: bold;
+    font-size: 18px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+footer h3{
+    background-color: rgb(0, 140, 187);
+    width: 100%;
+    text-align: center;
+    padding: 30px 20px;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@media(max-width:1450px) and (min-width:1300px)
+{
+    .navlink{
+        font-size: 16px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media(max-width:1300px) and (min-width:500px)
+{   
+    header{
+        display: block;
+    }
+    #logo-img{
+        height: 60px;
+        width: 360px;
+    }
+    .logo{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav{
+        display: none;
+    }
+
+
+    .hero-text{
+        font-size: 3em;
+    }
+
+    .section-heading{
+        width: 300px;
+        font-size: 36px;
+    }
+    .deal-items-section{
+        display: block;
+        padding-bottom: 10px;
+    }
+    .card{
+        width: 100%;
+        padding: 16px 32px;
+    }
+    .card-img{
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        height: 400px;
+    }
+    .card-title{
+        padding-top: 5px;
+        font-size: 26px;
+    }
+    .brands-container{
+        display: block;
+        padding-bottom: 64px;
+    }
+    .brand{
+        width: 100%;
+    }
+    .brand img{
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        height: 400px;
+        padding:0px 40px;
+    }
+    .services-container{
+        display: block;
+        padding-bottom: 10px;
+    }
+    .service img{
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        height: 450px;
+    }
+    .service-title{
+        padding-top: 5px;
+        font-size: 26px;
+    }
+    #about-us{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    #store-photo{
+        display: none;
+    }
+    #about-us-heading
+    {
+        padding-top: 10px;
+        padding-bottom: 40px;
+        width: 250px;
+    }
+    .about-us-item2{
+        padding: 0px 16px;
+    }
+    #about-para{
+        font-size: 18px;
+    }
+    .contact-us-flex{
+        display: block;
+
+    }
+    .map{
+        text-align:center;
+    }
+    #map-img{
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        height: 100%;
+        padding: 0;
+        border-radius: 10px;
+        transition: scale 0.5s;
+    }
+    .info{
+        padding-top: 20px;
+        width: 100%;
+    }
+    .info-pack{
+        text-align: center;
+    }
+    footer h3{
+        padding: 20px 15px;
+    }
+}
+
+
+@media(max-width:500px)
+{   
+    header{
+        display: block;
+    }
+    .logo{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav{
+        display: none;
+    }
+
+
+    .hero-text{
+        font-size: 3em;
+    }
+
+    .section-heading{
+        width: 300px;
+        font-size: 36px;
+    }
+    .deal-items-section{
+        display: block;
+        padding-bottom: 10px;
+    }
+    .card{
+        width: 100%;
+        padding: 16px 32px;
+    }
+    .card-img{
+        width: 100%;
+    }
+    .card-title{
+        padding-top: 5px;
+        font-size: 26px;
+    }
+    .brands-container{
+        display: block;
+        padding-bottom: 64px;
+    }
+    .brand{
+        width: 100%;
+    }
+    .brand img{
+        width: 100%;
+        padding:0px 40px;
+    }
+    .services-container{
+        display: block;
+        padding-bottom: 10px;
+    }
+    .service img{
+        width: 100%;
+    }
+    .service-title{
+        padding-top: 5px;
+        font-size: 26px;
+    }
+    #about-us{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    #store-photo{
+        display: none;
+    }
+    #about-us-heading
+    {
+        padding-top: 10px;
+        padding-bottom: 40px;
+        width: 250px;
+    }
+    .about-us-item2{
+        padding: 0px 16px;
+    }
+    #about-para{
+        font-size: 18px;
+    }
+    .contact-us-flex{
+        display: block;
+
+    }
+    .map{
+        text-align:center;
+    }
+    #map-img{
+        width: 80%;
+        height: 100%;
+        padding: 0;
+        border-radius: 10px;
+        transition: scale 0.5s;
+    }
+    .info{
+        padding-top: 20px;
+        width: 100%;
+    }
+    .info-pack{
+        text-align: center;
+    }
+    footer h3{
+        font-size: 16px;
+        padding: 20px 15px;
+    }
+}
